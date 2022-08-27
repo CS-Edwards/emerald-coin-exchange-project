@@ -24,5 +24,5 @@ Successful completion of the project implements API endpoints into a responsive 
 - When starting the project, first ensure that your DOM objects and API endpoint(s) function as intended before continuing with the rest of the build.
 
 ## Resouces
-- Utilize the [API_Source_List.md](#) as a resouce. The file contains a list of API options you can use for this project as well as helpful documentation.
+- Utilize the [API_Source_List.md]([#](https://github.com/CS-Edwards/emerald-coin-exchange-project/blob/main/API_Source_List.md)) as a resouce. The file contains a list of API options you can use for this project as well as helpful documentation.
 
