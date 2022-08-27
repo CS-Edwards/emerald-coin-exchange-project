@@ -2,7 +2,7 @@
 
 In this portfolio project, you will build a simple page that incorporates data from APIs.
 
-This mockup is an example of a landing page for a cryptocurrency exchange. Cryptocurrency price date is fed to the landing page using the CoinGecko open API. 
+This mockup is an example of a landing page for a cryptocurrency exchange. Cryptocurrency price data is fed to the landing page using the CoinGecko open API. 
 
 Successful completion of the project implements API endpoints into a responsive webpage. 
 
