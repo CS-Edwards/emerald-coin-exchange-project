@@ -5,37 +5,67 @@
     font-family:Arial, Helvetica, sans-serif
 }
 
-.container{
+body{
     width: 100%;
     height: 100vh;
     background-color: #256BCB;
     background-position: center;
-    background-size: cover;
+    background-size: cover; 
+    flex-direction: column;
+    justify-content: space-between; 
+
+
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
     padding: 0 10%;
     color:#fff;
+    
+   
 }
 
 nav{
     width: 100%;
     padding: 20px 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    
+}
+
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    cursor:pointer;
+    display:none;
+    
+
 }
 
 .logo{
     width: 75px;
     }
 
-nav ul{
+.nav-ul{
+    display: flex;
     flex:1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    
 }
 
-nav ul li {
+
+.nav-ul li a{
     display:  inline-block;
     margin: 10px 20px;
-}
-
-nav ul li a{
     color: #fff;
     text-decoration: none;
 }
@@ -48,21 +78,36 @@ nav ul li a{
     border-radius: 20px;
 }
 
+
 .content{
     margin-top: 0%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
-.content h1{
+
+.text{
+    margin-top: 0%;
+    
+    flex: 1 0 0px;
+}
+
+.text h1{
     font-size: 88px;
     margin-bottom:20px;
 }
 
-.content p{
+.text p{
     line-height: 22px; 
     font-size: 14px;
 }
 
-.content .btn{
+.text .btn{
     display: inline-block;
     margin-top: 20px;
     background: fuchsia;
@@ -71,11 +116,13 @@ nav ul li a{
 }
 
 .crypto{
-    position: absolute;
-    right: 10%;
-    bottom:300px;
+   
     display: flex;
-    align-content: center;   
+   
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex: 2 0 0px;   
     
 
 }
@@ -108,14 +155,38 @@ nav ul li a{
 }
 
 footer{
-    position: absolute;
-    right: 45%;
-    bottom:25px;
-    display: flex;
-    align-content: center;
+    display: flex;    
+    justify-content: center; 
+    
 
 }
 
 .social img{
     width:40px;
+    
+    
+}
+
+
+
+@media (max-width: 767px){
+
+    .nav-ul {
+        display:none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-ul.show{
+        display:flex;
+    }
+
+
+    .hamburger{
+        display: block;
+    }
+
+    #EME{
+        display: none;
+    }
 }

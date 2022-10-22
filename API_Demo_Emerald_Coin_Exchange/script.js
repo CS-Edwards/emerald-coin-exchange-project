@@ -4,6 +4,12 @@
 const btc = document.getElementById("btc");
 const eth = document.getElementById("eth");
 const dot = document.getElementById("dot");
+const hamburger = document.getElementById('hamburger');
+const navUL = document.getElementById('nav-ul');
+
+hamburger.addEventListener('click',()=>{
+    navUL.classList.toggle('show');
+})
 
 
 //API (async)
@@ -15,12 +21,7 @@ const settings={
     "headers":{}
 }
 
+//jQuery REMOVED
 
-$.ajax(settings).done(function(response){
-    console.log(response);
-    btc.innerHTML=response.bitcoin.usd;
-    eth.innerHTML=response.ethereum.usd;
-    dot.innerHTML=response.polkadot.usd;
-})
 
 
