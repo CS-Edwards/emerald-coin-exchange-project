@@ -21,10 +21,12 @@ body{
 .container{
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center; 
     padding: 0 10%;
     color:#fff;
-    
-   
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
 nav{
@@ -169,7 +171,8 @@ footer{
 
 
 
-@media (max-width: 767px){
+
+@media (max-width: 768px){
 
     .nav-ul {
         display:none;
@@ -189,4 +192,23 @@ footer{
     #EME{
         display: none;
     }
+
+    .text h1{
+        font-size: 66px;
+        margin-bottom:10px;
+    }
+}
+
+@media (max-width: 320px){
+
+    .text h1{
+        font-size: 44px;
+        margin-bottom:10px;
+    }
+
+    .crypto{
+        padding: 5px;
+        
+    }
+
 }
